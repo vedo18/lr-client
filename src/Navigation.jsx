@@ -18,6 +18,7 @@ function AppNavigator() {
       <Tab.Navigator
         initialRouteName={homeName}
         screenOptions={({route}) => ({
+          headerShown: false,
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
             const routeName = route.name;
