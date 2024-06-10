@@ -1,14 +1,15 @@
+// app.jsx
+import 'react-native-gesture-handler';
 import React from 'react';
-import {useColorScheme, Text, View} from 'react-native';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import AppNavigator from './Navigation';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
-
+const App = () => {
   return (
-    <View>
-      <Text>Learn Rhythm</Text>
-    </View>
+    <GestureHandlerRootView style={{flex: 1}}>
+      <AppNavigator />
+    </GestureHandlerRootView>
   );
-}
+};
 
 export default App;
