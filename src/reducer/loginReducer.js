@@ -2,7 +2,7 @@ import {
   LOGIN_REQUEST,
   LOGIN_SUCCESS,
   LOGIN_FAILURE,
-} from '../constants/loginConstants';
+} from '../constants/authConstants';
 
 const initialState = {
   isLoading: false,
