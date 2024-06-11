@@ -1,5 +1,10 @@
 import {combineReducers} from 'redux';
 
-const createRootReducer = () => combineReducers({});
+import loginReducer from './loginReducer';
+
+const createRootReducer = () =>
+  combineReducers({
+    auth: loginReducer,
+  });
 
 export default createRootReducer;
